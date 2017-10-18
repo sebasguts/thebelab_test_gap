@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: alpha.bst
+Database file #1: ../manualbib.xml.bib
+Warning--empty volume in NP95's crossref of NPbook95
+Warning--empty volume in PN95's crossref of NPbook95
+You've used 148 entries,
+            2543 wiz_defined-function locations,
+            1558 strings with 27323 characters,
+and the built_in function-call counts, 71488 in all, are:
+= -- 7668
+> -- 2059
+< -- 140
++ -- 673
+- -- 627
+* -- 4767
+:= -- 10262
+add.period$ -- 490
+call.type$ -- 148
+change.case$ -- 809
+chr.to.int$ -- 144
+cite$ -- 150
+duplicate$ -- 3241
+empty$ -- 5530
+format.name$ -- 868
+if$ -- 15685
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 153
+newline$ -- 770
+num.names$ -- 467
+pop$ -- 666
+preamble$ -- 1
+purify$ -- 975
+quote$ -- 0
+skip$ -- 3208
+stack$ -- 0
+substring$ -- 6805
+swap$ -- 1237
+text.length$ -- 133
+text.prefix$ -- 87
+top$ -- 0
+type$ -- 1070
+warning$ -- 2
+while$ -- 464
+width$ -- 154
+write$ -- 2030
+(There were 2 warnings)
