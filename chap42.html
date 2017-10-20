@@ -9,10 +9,38 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="GAPDoc2HTML" />
 <link rel="stylesheet" type="text/css" href="manual.css" />
+<script type="text/x-thebe-config">
+    thebeConfig = {
+      binderOptions: {
+        repo: "sebasguts/GAPBinderDemo"
+      },
+      stripPrompts: {
+        inPrompt: 'gap> ',
+        continuationPrompt: '> ',
+        selector: '.example',
+      },
+      kernelOptions: {
+        name: "gap-native",
+      }
+  }
+  </script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="https://unpkg.com/thebelab@0.0.7"></script>
+<script type="text/javascript" src="index.min.js"></script>
+<!-- <script type="text/javascript" src="index.js"></script> -->
+<!-- <script type="text/javascript" src="https://unpkg.com/thebelab@0.0.7"></script> -->
 <script src="manual.js" type="text/javascript"></script>
 <script type="text/javascript">overwriteStyle();</script>
+<script type="text/javascript">
+  function activate_cells(){
+  thebelab.on("status", function(evt, data) {
+    console.log("Status changed:", data.status, data.message);
+    $(".thebe-status-button")
+      .attr("class", "thebe-status-button thebe-status-" + data.status)
+      .text(data.status);
+  });
+  thebelab.bootstrap();
+  }
+  </script>
 </head>
 <body class="chap42"  onload="jscontent()">
 
@@ -63,10 +91,20 @@
 </div></div>
 </div>
 
-<div style="text-align: center;">
-<input type="button" onclick="convert_examples();start_kernel()" value="Make this live!">
-</div>
+<script text="text/javascript">
+function place_status_button(){
+  $('.status_indicator_field').html('Status: <span class="thebe-status-button"></span>');
+}
+function remove_activate_button(){
+  $('.activate_button_field').empty();
+}
+</script>
 
+<div class="activate_button_field" style="text-align: center;">
+<input type="button" onclick="place_status_button();remove_activate_button();activate_cells();" value="Make this live!">
+</div>
+<div class="status_indicator_field" style="text-align: center;">
+</div>
 <h3>42 <span class="Heading">Permutations</span></h3>
 
 <p><strong class="pkg">GAP</strong> offers a data type <em>permutation</em> to describe the elements of permutation groups.</p>
