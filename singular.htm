@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="manual" />
+<META NAME="description" CONTENT="Singular Manual: Singular Manual">
+<META NAME="keywords" CONTENT="Singular Manual: Singular Manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META NAME="Generator" CONTENT="texi2html 1.65">
+  <title>Online Manual -  
+ std</title>
+  <link href="/templates/ja_purity/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/plugins/system/scjquery/js/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="/plugins/system/scjquery/js/jquery.no.conflict.js"></script>
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/caption.js"></script>
+
+
+<link rel="stylesheet" href="http://www.singular.uni-kl.de/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="http://www.singular.uni-kl.de/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="http://www.singular.uni-kl.de/templates/ja_purity/css/template.css" type="text/css" />
+<link rel="stylesheet" href="http://www.singular.uni-kl.de/search.css" type="text/css" />
+
+<script language="javascript" type="text/javascript" src="http://www.singular.uni-kl.de/templates/ja_purity/js/ja.script.js"></script>
+<!--<script language="javascript" type="text/javascript" src="http://www.singular.uni-kl.de/templates/ja_purity/js/gmap.js"></script>-->
+<script language="javascript" type="text/javascript" src="http://www.singular.uni-kl.de/templates/ja_purity/js/jquery.js"></script>
+
+
+
+<script language="javascript" type="text/javascript">
+var rightCollapseDefault='show';
+var excludeModules='38';
+</script>
+<script language="javascript" type="text/javascript" src="http://www.singular.uni-kl.de/templates/ja_purity/js/ja.rightcol.js"></script>
+
+<link rel="stylesheet" href="http://www.singular.uni-kl.de/templates/ja_purity/css/menu.css" type="text/css" />
+
+<link rel="stylesheet" href="http://www.singular.uni-kl.de/templates/ja_purity/css/ja-sosdmenu.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="http://www.singular.uni-kl.de/templates/ja_purity/js/ja.moomenu.js"></script>
+
+<link rel="stylesheet" href="http://www.singular.uni-kl.de/templates/ja_purity/styles/header/blue/style.css" type="text/css" />
+<link rel="stylesheet" href="http://www.singular.uni-kl.de/templates/ja_purity/styles/background/lighter/style.css" type="text/css" />
+<link rel="stylesheet" href="http://www.singular.uni-kl.de/templates/ja_purity/styles/elements/blue/style.css" type="text/css" />
+
+
+<link rel="stylesheet" href="status_button.css" type="text/css" />
+  <script type="text/x-thebe-config">
+    thebeConfig = {
+      binderOptions: {
+        repo: "sebasguts/SingularBinderDemo",
+        ref: "master",
+        binderUrl: "https://mybinder.org"
+      },
+      kernelOptions: {
+        name: "singular",
+      },
+      stripOutputPrompts: {
+        outPrompt: '==>',
+        selector: '.smallexample',
+      },
+      requestKernel: true
+    }
+</script>
+<script type="text/javascript" src="index.min.new.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+  console.log("bla");
+  thebelab.on("status", function(evt, data) {
+    console.log("Status changed:", data.status, data.message);
+    $(".thebe-status-button")
+      .attr("class", "thebe-status-button thebe-status-" + data.status)
+      .text(data.status);
+  });
+  thebelab.bootstrap();
+};
+</script>
+<!--[if IE 7.0]>
+<style type="text/css">
+.clearfix {display: inline-block;}
+</style>
+<![endif]-->
+
+<style type="text/css">
+#ja-header,#ja-mainnav,#ja-container,#ja-botsl,#ja-footer {width: 97%;margin: 0 auto;}
+#ja-wrapper {min-width: 100%;}
+</style>
+</head>
+
+<body id="bd" class="fs3 
+Moz" >
+<a name="Top" id="Top"></a>
+<ul class="accessibility">
+	<li><a href="#ja-content" title="Skip to content">Skip to content</a></li>
+	<li><a href="#ja-mainnav" title="Skip to main navigation">Skip to main navigation</a></li>
+	<li><a href="#ja-col1" title="Skip to first column">Skip to first column</a></li>
+	<li><a href="#ja-col2" title="Skip to second column">Skip to second column</a></li>
+</ul>
+
+<div id="ja-wrapper">
+
+<!-- BEGIN: HEADER -->
+<div id="ja-headerwrap">
+	<div id="ja-header" class="clearfix" style="background: url(http://www.singular.uni-kl.de/templates/ja_purity/images/header/header3.jpg) no-repeat top right;">
+
+	<div class="ja-headermask">&nbsp;</div>
+
+			<h1 class="logo">
+			<a href="/index.php" title="Singular"><span>Singular</span></a>
+		</h1>
+	
+	
+			<div id="ja-search">
+                            <a class="searchdiv" href="http://www.singular.uni-kl.de/search.html">Search</a>
+		</div>
+	
+	</div>
+</div>
+<!-- END: HEADER -->
+
+<!-- BEGIN: MAIN NAVIGATION -->
+<!-- white separator above
+    <div style="background-color:#ffffff; width=100%; height:1px"></div>
+-->
+<div id="ja-mainnavwrap">
+	<div id="ja-mainnav" class="clearfix">
+        <ul class="menu-nav"><li class="parent item57"><a href="/index.php/singular-download.html"><span>Download <!-- >>> Articles Anywhere >>> -->4-1-0<!-- <<< Articles Anywhere <<< --></span></a></li><li class="item78"><a href="https:http://www.singular.uni-kl.de:8003/" target="_blank"><span>Try Online</span></a></li><li class="item18"><a href="/index.php/singular-manual.html"><span>Online Manual</span></a></li><li class="item79"><a href="/index.php/graphical-interface.html"><span>Graphical Interface</span></a></li><li class="parent item28"><a href="/index.php/singular-get-help.html"><span>Get Help</span></a></li><li class="item29"><a href="/index.php/singular-report-bugs.html"><span>Report Bugs</span></a></li><li class="item58"><a href="/index.php/singular-books.html"><span>Books</span></a></li><li class="item56"><a href="/index.php/singular-devteams.html"><span>Teams</span></a></li><li class="item30"><a href="/index.php/singular-join.html"><span>Join Us</span></a></li></ul>
+	</div>
+</div>
+<!-- END: MAIN NAVIGATION -->
+
+<!-- white separator below
+    <div style="background-color:#ffffff; width=100%; height:1px"></div>
+-->
+
+<div id="ja-containerwrap-fr">
+<div id="ja-containerwrap2">
+	<div id="ja-container">
+	<div id="ja-container2" class="clearfix">
+
+		<div id="ja-mainbody-fr" class="clearfix">
+
+		<!-- BEGIN: CONTENT -->
+		<div id="ja-contentwrap">
+		<div id="ja-content">
+
+			
+
+						<div id="ja-pathway">
+				<span class="breadcrumbs pathway">
+<a href="http://www.singular.uni-kl.de/" class="pathway">Home</a> <img src="/templates/ja_purity/images/arrow.png" alt=""  /> Online Manual</span>
+
+			</div>
+			
+
+<div class="article-content">
+<!-- insert header begin-->
+
+<META NAME="description" CONTENT="Singular Manual: std">
+<META NAME="keywords" CONTENT="Singular Manual: std">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META NAME="Generator" CONTENT="texi2html 1.65">
+
+<!-- insert header end-->
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR VALIGN="TOP">
+<TD ALIGN="LEFT">
+<TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT">  <a href="index.htm"><img
+    src="singular-icon-transparent.gif" width="50"
+      border="0" ALT="Top"></a>
+</TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_345.htm#SEC385"><IMG SRC="a_left.gif" BORDER="0" ALT="Back: status" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_347.htm#SEC387"><IMG SRC="a_right.gif" BORDER="0" ALT="Forward: stdfglm" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_201.htm#SEC241"><IMG SRC="a_leftdouble.gif" BORDER="0" ALT="FastBack: Functions and system variables" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_369.htm#SEC409"><IMG SRC="a_rightdouble.gif" BORDER="0" ALT="FastForward: Control structures" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_202.htm#SEC242"><IMG SRC="a_up.gif" BORDER="0" ALT="Up: Functions" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="index.htm#SEC_Top"><IMG SRC="a_top.gif" BORDER="0" ALT="Top: Singular Manual" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_toc.htm#SEC_Contents"><IMG SRC="a_tableofcon.gif" BORDER="0" ALT="Contents: Table of Contents" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_2557.htm#SEC2646"><IMG SRC="a_index.gif" BORDER="0" ALT="Index: Index" ALIGN="MIDDLE"></A></TD>
+</TR>
+<TR VALIGN="TOP" ALIGN="LEFT">
+<TD VALIGN="MIDDLE" ALIGN="LEFT"><A HREF="sing_abt.htm#SEC_About"><IMG SRC="a_help.gif" BORDER="0" ALT="About: About this document" ALIGN="MIDDLE"></A></TD>
+</TR>
+</TABLE>
+</TD>
+<TD ALIGN="LEFT">
+<H3> 5.1.144 std </H3>
+<!--docid::SEC386::-->
+<DL COMPACT>
+<DT><CODE><STRONG>Syntax:</STRONG></CODE>
+<DD><CODE>std (</CODE> ideal_expression<CODE>)</CODE>
+<BR><CODE>std (</CODE> module_expression<CODE>)</CODE>
+<BR><CODE>std (</CODE> ideal_expression<CODE>,</CODE> intvec_expression <CODE>)</CODE>
+<BR><CODE>std (</CODE> module_expression<CODE>,</CODE> intvec_expression <CODE>)</CODE>
+<BR><CODE>std (</CODE> ideal_expression<CODE>,</CODE> intvec_expression<CODE>,</CODE> intvec_expression <CODE>)</CODE>
+<BR><CODE>std (</CODE> module_expression<CODE>,</CODE> intvec_expression<CODE>,</CODE> intvec_expression <CODE>)</CODE>
+<BR><CODE>std (</CODE> ideal_expression<CODE>,</CODE> poly_expression <CODE>)</CODE>
+<BR><CODE>std (</CODE> module_expression<CODE>,</CODE> vector_expression <CODE>)</CODE>
+<BR><CODE>std (</CODE> ideal_expression<CODE>,</CODE> ideal_expression <CODE>)</CODE>
+<BR><CODE>std (</CODE> module_expression<CODE>,</CODE> module_expression <CODE>)</CODE>
+<BR><CODE>std (</CODE> ideal_expression<CODE>,</CODE> poly_expression<CODE>,</CODE> intvec_expression<CODE>,</CODE> intvec_expression <CODE>)</CODE>
+<BR><CODE>std (</CODE> module_expression<CODE>,</CODE> poly_expression<CODE>,</CODE> intvec_expression<CODE>,</CODE> intvec_expression <CODE>)</CODE>
+<DT><CODE><STRONG>Type:</STRONG></CODE>
+<DD>ideal or module
+<DT><CODE><STRONG>Purpose:</STRONG></CODE>
+<DD>returns a standard basis of an ideal or module with respect to the
+monomial ordering of the basering.
+A standard basis is a set of generators such that
+the leading terms generate the leading ideal, resp. module.
+<BR>Use an optional
+second argument of type intvec as Hilbert series
+(result of <CODE>hilb(i,1)</CODE>, see  <A HREF="sing_253.htm#SEC293">hilb</A>),
+if the ideal, resp. module, is homogeneous
+(Hilbert driven standard basis computation,  <A HREF="sing_348.htm#SEC388">stdhilb</A>).
+If the ideal is quasihomogeneous with some weights w and if the Hilbert series
+is computed w.r.t. to these weights, then use w as third argument.
+<BR>Use an optional second argument of type poly/vector/ideal, resp. module,
+to construct the standard basis from an already computed one (given as the
+first argument) and additional generator(s) (the second argument).
+<BR>4 arguments <CODE>G,p,hv,w</CODE> are the combination of the above:
+standard basis <CODE>G</CODE>, additional generator <CODE>p</CODE>, hilbert function <CODE>hv</CODE> w.r.t. weights <CODE>w</CODE>.
+<P>
+
+<DT><CODE><STRONG>Note:</STRONG></CODE>
+<DD>The
+standard basis is computed with a (more or less) straight-forward
+implementation of the classical
+Buchberger (resp. Mora) algorithm. For global orderings, use the
+<CODE>groebner</CODE> command instead (see  <A HREF="sing_250.htm#SEC290">groebner</A>), which heuristically
+chooses the "best" algorithm to compute a Groebner basis.
+<BR>To view the progress of long running computations, use
+<CODE>option(prot)</CODE> (see  <A HREF="sing_307.htm#option(prot)">option(prot)</A>).
+<P>
+<p>Status: <span class="thebe-status-button"></span></p>
+<DT><CODE><STRONG>Example:</STRONG></CODE>
+<DD><TABLE><tr><td>&nbsp;</td><td class=smallexample><FONT SIZE=-1><pre>  // local computation
+  ring r=32003,(x,y,z),ds;
+  poly s1=1x2y+151xyz10+169y21;
+  poly s2=1xz14+6x2y4+3z24;
+  poly s3=5y10z10x+2y20z10+y10z20+11x3;
+  ideal i=s1,s2,s3;
+  ideal j=std(i);
+  degree(j);
+==> // dimension (local)   = 0
+==> // multiplicity = 1512
+  // Hilbert driven elimination (standard)
+  ring rhom=32003,(x,y,z,h),dp;
+  ideal i=homog(imap(r,i),h);
+  ideal j=std(i);
+  intvec iv=hilb(j,1);
+  ring rlex=32003,(x,y,z,h),lp;
+  ideal i=fetch(rhom,i);
+  ideal j=std(i,iv);
+  j=subst(j,h,1);
+  j[1];
+==> z64
+  // Hilbert driven elimination (ideal is quasihomogeneous)
+  intvec w=10,1,1;
+  ring whom=32003,(x,y,z),wp(w);
+  ideal i=fetch(r,i);
+  ideal j=std(i);
+  intvec iw=hilb(j,1,w);
+  ring wlex=32003,(x,y,z),lp;
+  ideal i=fetch(whom,i);
+  ideal j=std(i,iw,w);
+  j[1];
+==> z64
+</FONT></pre></td></tr></table></DL>
+See
+ <A HREF="sing_234.htm#SEC274">facstd</A>;
+ <A HREF="sing_239.htm#SEC279">fglm</A>;
+ <A HREF="sing_250.htm#SEC290">groebner</A>;
+ <A HREF="sing_85.htm#SEC125">ideal</A>;
+ <A HREF="sing_296.htm#SEC336">mstd</A>;
+ <A HREF="sing_307.htm#SEC347">option</A>;
+ <A HREF="sing_160.htm#SEC200">ring</A>;
+ <A HREF="sing_347.htm#SEC387">stdfglm</A>;
+ <A HREF="sing_348.htm#SEC388">stdhilb</A>.
+<P>
+
+<A NAME="stdfglm"></A>
+</TD>
+</TR>
+</TABLE>
+<!-- insert footer--></div>
+
+
+<span class="article_separator">&nbsp;</span>
+
+
+			
+		</div>
+		</div>
+		<!-- END: CONTENT -->
+
+
+
+
+		<!-- BEGIN: LEFT COLUMN -->
+<div id="ja-col1">
+
+					<div class="moduletable_menu">
+					<h3>Main</h3>
+					<ul class="menu"><li id="current" class="active item1"><a href="http://www.singular.uni-kl.de/"><span>Home</span></a></li><li class="item27"><a href="/index.php/news.html"><span>News</span></a></li><li class="item34"><a href="/index.php/publications.html"><span>Publications</span></a></li><li class="item37"><a href="/index.php/how-to-cite-singular.html"><span>How to cite Singular</span></a></li></ul>		</div>
+			<div class="moduletable_menu">
+					<h3>Community</h3>
+					<ul class="menu"><li class="item53"><a href="http://www.singular.uni-kl.de/forum/viewforum.php?f=10&amp;sid=dd1a5dbb19a5db1d7d4a4856f20bb791"><span>Forum</span></a></li><li class="item38"><a href="http:http://www.singular.uni-kl.de:8002/trac/"><span>Trac</span></a></li><li class="item43"><a href="/index.php/events.html"><span>Events</span></a></li><li class="item77"><a href="https://mail.mathematik.uni-kl.de/mailman/listinfo/singular-users" target="_blank"><span>Mailing List</span></a></li><li class="item75"><a href="//singular-team.blogspot.com/" target="_blank"><span>Blog</span></a></li></ul>		</div>
+			<div class="moduletable_menu">
+					<h3>System</h3>
+					<ul class="menu"><li class="item13"><a href="/index.php/new-libraries.html"><span>New Libraries</span></a></li><li class="item76"><a href="/index.php/source-code.html"><span>Source Code</span></a></li><li class="item15"><a href="/index.php/open-tasks.html"><span>Open Tasks</span></a></li><li class="item14"><a href="/index.php/third-party-software.html"><span>Third-party software</span></a></li></ul>		</div>
+			<div class="moduletable">
+					<h3>Misc</h3>
+					<ul class="menu"><li class="item45"><a href="/index.php/links.html"><span>Links</span></a></li><li class="item46"><a href="mailto:singular@mathematik.uni-kl.de"><span>Contact</span></a></li><li class="item44"><a href="/index.php/impressum.html"><span>Impressum</span></a></li><li class="item55"><a href="/index.php/internal.html"><span>Internal</span></a></li></ul>		</div>
+	
+<a href="http://www.computeralgebra.de/" target="_blank"><img width="100%"
+src="/images/stories/logo2_gruen_13122011.png"></a>
+		</div><br />
+
+		<!-- END: LEFT COLUMN -->
+
+
+
+		
+		</div>
+
+		
+	</div>
+	</div>
+</div>
+</div>
+
+
+<!-- BEGIN: FOOTER -->
+<div id="ja-footerwrap">
+<!--
+<div id="ja-footer" class="clearfix">
+	<div id="ja-footnav">
+		
+	</div>
+
+	<div class="copyright">
+		
+	</div>
+
+	<div class="ja-cert">
+		
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" title="Our site is valid CSS" style="text-decoration: none;">
+		<img src="http://www.singular.uni-kl.de/templates/ja_purity/images/but-css.gif" border="none" alt="Our site is valid CSS" />
+		</a>
+		<a href="http://validator.w3.org/check/referer" target="_blank" title="Our site is valid XHTML 1.0 Transitional" style="text-decoration: none;">
+		<img src="http://www.singular.uni-kl.de/templates/ja_purity/images/but-xhtml10.gif" border="none" alt="Our site is valid XHTML 1.0 Transitional" />
+		</a>
+	</div>
+
+  <br />
+</div>
+-->
+</div>
+<!-- END: FOOTER -->
+
+</div>
+
+
+
+</body>
+
+</html>
